@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "src": "/chatbot", "dest": "chatbot.py" },
+    { "src": "/gemini", "dest": "gemini.py" }
+  ]
+}
