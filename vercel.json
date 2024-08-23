@@ -1,6 +1,9 @@
 {
+  "version": 2,
+  "builds": [
+    { "src": "chatbotui.py", "use": "@vercel/python" }
+  ],
   "routes": [
-    { "src": "/chatbotui", "dest": "chatbotui.py" },
-    { "src": "/groq_mobel", "dest": "groq_mobel.py" }
+    { "src": "/chat", "dest": "chatbotui.py" }
   ]
 }
