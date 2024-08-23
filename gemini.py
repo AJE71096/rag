@@ -16,7 +16,7 @@ from langchain_groq import ChatGroq
 app = Flask(__name__)
 
 # 讀取 CSV 檔案
-loader = CSVLoader(file_path=r"C:\Users\USER\Documents\北捷實習\ChatBot GenAI\資訊問題題庫-改善.csv")
+loader = CSVLoader(file_path=資訊問題題庫-改善.csv)
 data = loader.load()
 #df = pd.DataFrame(data)
 
@@ -35,7 +35,7 @@ qdrant = QdrantVectorStore.from_documents(
 )
 
 # 設定 GROQ AI
-os.environ["GROQ_API_KEY"] = api_key
+os.environ["GROQ_API_KEY"] 
 llm = ChatGroq(model='llama3-70b-8192',temperature=0)
 response = llm.invoke('你好')
 print(response.content)
