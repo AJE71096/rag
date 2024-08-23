@@ -16,7 +16,7 @@ from langchain_groq import ChatGroq
 app = Flask(__name__)
 
 # 讀取 CSV 檔案
-loader = CSVLoader(file_path=r"C:\Users\USER\Documents\北捷實習\ChatBot GenAI\資訊問題題庫-改善.csv")
+loader = CSVLoader(file_path="./資訊問題題庫-改善.csv")
 data = loader.load()
 #df = pd.DataFrame(data)
 
