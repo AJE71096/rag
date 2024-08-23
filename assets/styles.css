@@ -1,0 +1,29 @@
+.loading-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    height: 20px;            /* 設置容器高度 */
+}
+
+.loading-bar {
+    width: 20px;             /* 設置橫條寬度 */
+    height: 100%;
+    margin: 0 2px;           /* 設置橫條間距 */
+    background-color: #e0e0e0;/* 橫條背景顏色 */
+    animation: loading-bar 1s infinite ease-in-out; /* 動畫效果 */
+}
+
+@keyframes loading-bar {
+    0% {
+        transform: scaleY(0.4);
+        background-color: #e0e0e0;
+    }
+    50% {
+        transform: scaleY(1);
+        background-color: #4CAF50; /* 動畫過程中改變顏色 */
+    }
+    100% {
+        transform: scaleY(0.4);
+        background-color: #e0e0e0;
+    }
+}

@@ -1,0 +1,39 @@
+/* 自定義滾動條寬度 */
+::-webkit-scrollbar {
+    width: 10px;  /* 滾動條寬度 */
+}
+
+/* 自定義滾動條按鈕 */
+::-webkit-scrollbar-button {
+    background: transparent;
+    border-radius: 4px;  /* 按鈕圓角 */
+}
+
+/* 自定義滾動條軌道 */
+::-webkit-scrollbar-track {
+    background: rgb(110, 110, 110);  /* 軌道顏色 */
+    border-radius: 10px;  /* 軌道圓角 */
+}
+
+/* 自定義滾動條滑塊 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;  /* 滑塊圓角，使其看起來像膠囊 */
+    background-color: rgb(0, 0, 0);  /* 滑塊顏色 */
+    border: 2px solid rgb(110, 110, 110);  /* 滑塊的邊框顏色 */
+}
+
+/* 自定義滾動條軌道的陰影 */
+::-webkit-scrollbar-track-piece {
+    box-shadow: transparent;  /* 取消陰影 */
+}
+
+/* 將滾動條放置在左側並保持間距 */
+#log-content {
+    padding-left: 5px;  /* 右側內邊距以保持與滾動條的間距 */
+}
+#faq-section{
+    text-align: left;  /* 文字左對齊 */
+}
+#user-input::placeholder {
+    color: white;
+}
