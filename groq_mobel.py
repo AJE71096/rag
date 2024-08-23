@@ -34,8 +34,13 @@ qdrant = QdrantVectorStore.from_documents(
 )
 
 # 設定 GROQ AI
-os.environ["GROQ_API_KEY"] = api_key
-llm = ChatGroq(model='llama3-70b-8192',temperature=0)
+# 從環境變數讀取 API 金鑰
+api_key = os.getenv('GROQ_API_KEY')
+
+# 假設你的 ChatGroq 類別需要 API 金鑰來初始化
+llm = ChatGroq(model='llama3-70b-8192', temperature=0, api_key=api_key)
+
+# 發送請求並打印回應
 response = llm.invoke('你好')
 print(response.content)
 
