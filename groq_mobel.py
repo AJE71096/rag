@@ -1,5 +1,4 @@
 import os
-from config import api_key
 from flask import Flask, request, jsonify
 
 from langchain_qdrant import QdrantVectorStore
