@@ -1,6 +1,8 @@
+dash
+pyodbc
+dash-bootstrap-components
+requests
+flask
 langchain
-openai
-tiktoken
-chromadb
-youtube-transcript-api
-pytube
+langchain-qdrant
+langchain-groq
